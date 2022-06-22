@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+;
+$boja:#F0DFCC;
+$bg:#aec6cf;
+$roy:#c5ced1;
+$white:#fff;
+$bj:#aec6cf;
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+*::selection{
+    background-color:#F0DFCC;
+    color: $roy;
+}
+html{
+    font-size: 59%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: $roy;
+}
+html::-webkit-scrollbar-thumb{
+    background: #F0DFCC;
+}
+body{
+    background:$bj;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: $bg;
+    display: $boja;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit:fill;
+    margin-bottom: 1rem;
+    border:0.7rem solid $boja;
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: $white;
+}
+header .user .post{
+    font-size: 2rem;
+    color: #eee;
+}
+header .nav{
+    width: 100%;
+}
+header .nav ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .nav ul li a{
+    display:  block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background:#c5ced1;
+    color: $white;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .nav ul li a:hover{
+    background: $boja;
+}
+header .nav ul li .date {
+    background: #c5ced1;
+}
+header .nav ul li .date:hover {
+    background: #c5ced1;
+}
+#menu{
+    position: fixed;
+    top:2rem;
+    right: 2rem;
+    background: $roy;
+    color: $white;
+    cursor: pointer;
+    font-size: 2.3rem;
+    padding: 1rem 1.3rem;
+    z-index: 1000;
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 2rem;
+    width: 75rem;
+    border-left: 0.2rem solid $white;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: $white;
+}
+.home h1{
+    font-size:2rem;
+    color: $white;
+}
+.home p{
+    font-size: 1rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.home span{
+    color: $boja;
+}
+.btn{
+    padding: 0.7rem 3rem;
+    background: $roy;
+    color: $white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius:5rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: $boja;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #F0DFCC;
+    color: $white;
+}
+.heading span{
+    color:$boja;
+}
+.about{
+    border-left: 0.2rem solid $white;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: $boja;
+    padding:1rem 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color:#eee;
+    padding:0 0.5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem; display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #F0DFCC;
+    text-align: center;
+    padding:2rem;
+    margin: 2rem;
+}
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: $white;
+}
+.about .row .counter .box h3{
+    font-size: 2rem;
+    color: $white;
+}
+.education{
+    border-left: 0.2rem solid $white;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width: 27rem;
+    margin: 5rem 5rem;
+    padding-left: 4rem;
+    border-left: 0.2rem solid $white;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size:1.3rem;
+    background: #F0DFCC;
+    color: $white;
+    border-radius: 5rem;
+    padding: 0.5rem 2.5rem;
+}
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: $white;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: $white;
+    padding-top: 1rem ;
+}
+.education .box-container .box i{
+    position: absolute;
+    top: -1.5rem ;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: $white;
+    background: #F0DFCC;
+}
+.favorites{
+    border-left: 0.2rem solid $white;
+}
+.favorites .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    text-align: center;
+}
+.favorites .box-container .box a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:$bj;
+}
+.favorites .box-container .box{
+    height: 35rem;
+    width: 35rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.favorites .box-container .box img{
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+.favorites .box-container .box:hover{
+    border: 3px solid $white;
+}
+.favorites .box-container .box:hover a{
+    color: $white;
+}
+.favorites .box-container .box:hover img{
+    transform: scale(1.1);
+}
+.contact{
+    border-left: 0.2rem solid $white;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex:1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding:1.5rem;
+    margin: 1rem 0;
+    background: $roy;
+    color: $white;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contact .row form .box-msg{
+    height: 15rem;
+    resize: none;
+    padding:1.5rem;
+    margin: 1rem 0;
+    background: $roy;
+    color: $white;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: $white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3{
+    display:  flex;
+    align-items:  center;
+    font-size: 2rem;
+    color: #eee;
+    pad: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding: 1rem;
+    color: $boja;
+}
+
+/*media*/
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+@media(max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+}
